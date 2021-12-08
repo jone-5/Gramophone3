@@ -147,24 +147,28 @@ main {
   
   /* Header Styles */
   header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: top;
+     justify-content: top;
   }
   header ul {
     font-display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-inline: 0;
     padding-right: 0;
     list-style-position: 0;  
-    justify-content: space-around;
-    gap: 2rem;
+    /* justify-content: space-around; */
+    gap: .5rem;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    font-family:'volkov';
   }
   header a {
-    display: flex;
+    display: block;
     padding: 1rem;
     user-select: none;
     font-family: 'volkov';
+    text-decoration: none;
   } 
   header a:not([href]) {
     color: #aaa;
@@ -173,8 +177,10 @@ main {
     color: #402401;
   }    
   .main-menu {
-    transform: translateX(-510px);
-    transition: transform 300ms ease;
+    width: 100%;
+    background-color: #402401;
+    position: fixed;
+
   }   
   .menu-show {
     transform: translateY(0);
