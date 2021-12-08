@@ -23,7 +23,13 @@ main {
   }
   
   .hero{
-    position: relative;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    object-fit: cover;
+    z-index: -1;
   }
   
   .hero .overlay{
@@ -208,11 +214,15 @@ main {
 /* End Header Styles */
 
 
-  body {
+  section {
     background: linear-gradient(-45deg, #d18973, #fff, #f5ae5e, #f7d4ae);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     height: 300vh;
+    z-index: 1;
+    position: relative;
+    margin-top: 80vh;
+    align-self: stretch;
 }
   .page-content {
     display: grid;
