@@ -1,6 +1,21 @@
 *{
   box-sizing: border-box; 
 }
+footer:last-child{
+align-self: center;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer img{
+  width: 120px;
+}
+
 :root{
   --button-color: #8C4303
 }
@@ -60,6 +75,8 @@ main {
   
   .cards{
     display:flex;
+    align-self: center;
+    padding-bottom: 2rem;
   }
   .card p{
     text-align: center;
@@ -85,6 +102,10 @@ main {
   margin-right: 1rem;
 
   
+}
+
+img{
+  display: block;
 }
 
 .card :last-of-type{
@@ -218,11 +239,13 @@ main {
     background: linear-gradient(-45deg, #d18973, #fff, #f5ae5e, #f7d4ae);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-    height: 300vh;
+    /* height: 300vh; */
     z-index: 1;
     position: relative;
     margin-top: 80vh;
     align-self: stretch;
+    display: flex;
+    flex-direction: column;
 }
   .page-content {
     display: grid;
@@ -270,10 +293,9 @@ body {
   font-family: "volkov", sans-serif;
   background-color: var(--form-bg-color);
   color: var(--form-bg-color);
-  margin: 0 1rem;
 }
 
-section {
+article section {
   max-width: 50rem;
   align-self: center;
 }
