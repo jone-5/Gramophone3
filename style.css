@@ -1,6 +1,10 @@
 *{
   box-sizing: border-box; 
 }
+nav{
+  font-size: 1.5rem;
+}
+
 footer:last-child{
 align-self: center;
 }
@@ -11,9 +15,22 @@ footer{
   align-items: center;
   gap: 2rem;
 }
+section>h1{
+  text-align: center;
+}
+
+aside>h3{
+  text-align: center;
+}
 
 footer img{
   width: 120px;
+  fill:none;
+  stroke: #8C4303;
+}
+
+.form footer img{
+  width: 400px;
 }
 
 :root{
@@ -92,8 +109,8 @@ main {
     left: 0;
     right:0;
     bottom: 0;
-    background-color: #000;
-    transition: 100ms;
+    background-color: #8c4303cc;
+    transition: 300ms;
     
   }
   
@@ -140,7 +157,7 @@ img{
   .paragraph {
     font-family: volkhov;
     font-size: 14px;
-    line-height: 10px;
+    line-height: 1.5;
     color: #402401
   }
   
@@ -207,7 +224,6 @@ img{
     width: 100%;
     background-color: #402401;
     position: fixed;
-
   }   
   .menu-show {
     transform: translateY(0);
@@ -246,6 +262,18 @@ img{
     align-self: stretch;
     display: flex;
     flex-direction: column;
+}
+.about section,
+.form section{
+  margin-top: 0;
+  background: none;
+  animation: none;
+}
+body.about,
+body.form{ 
+  background: linear-gradient(-45deg, #d18973, #fff, #f5ae5e, #f7d4ae);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
 }
   .page-content {
     display: grid;
