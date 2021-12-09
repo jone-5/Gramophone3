@@ -428,12 +428,14 @@ textarea:focus {
 
   /* Album Carousel Styles */
   .slider-wrapper {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 500px;
     height: 500px;
     overflow: hidden;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
   .slider-wrapper input {
     position: absolute;
@@ -661,3 +663,7 @@ textarea:focus {
   /* END ALBUM CAROUSEL STYLES */
 }
 
+.slider {
+  position: relative;
+  margin: auto;
+}
