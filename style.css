@@ -144,7 +144,7 @@ img{
     border-radius: 5px; 
     transition: background-color 300ms, color 300ms;
     bottom: 20px;
-    font-family: syne;
+    font-family: syne-regular;
     text-transform: uppercase;
     font-weight: bold; 
   }
@@ -162,19 +162,19 @@ img{
   }
   
   .h1 {
-    font-family: syne;
+    font-family: syne-regular;
     font-size: 48px;
     line-height: 62px;
     color: #8C4303;
-    font-family: 'Syne', sans-serif;
+    font-family: 'Syne-regular', sans-serif;
   }
   .h2 {
-    font-family: syne;
+    font-family: syne-regular;
     font-size: 40px;
     line-height: 62px;
   }
   .h3 {
-    font-family: syne;
+    font-family: syne-regular;
     font-size: 38px;
     line-height: 62px;
   }
